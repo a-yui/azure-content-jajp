@@ -123,7 +123,7 @@ $beLBPort = 80
 $lbrule = New-AzureRmLoadBalancerRuleConfig -Name $lbruleName `
 -FrontendIPConfiguration $frontend -BackendAddressPool $backendAddressPool `
 -Probe $probe -Protocol $protocol -FrontendPort $feLBPort -BackendPort $beLBPort `
--IdleTimeoutInMinutes 15 -EnableFloatingIP -LoadDistribution SourceIP -Verbose;
+-IdleTimeoutInMinutes 15 -LoadDistribution SourceIP -Verbose;
 ```
 
 上記の構成で Load Balancer を作成します。
